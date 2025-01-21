@@ -1,5 +1,5 @@
 import { motion } from "framer-motion"
-import { ArrowRight, Component, Palette, Zap } from "lucide-react"
+import { ArrowRight, Link, Youtube, RefreshCw, TrendingUp } from "lucide-react"
 import { useNavigate } from "react-router-dom"
 
 import { Button } from "@/components/ui/button"
@@ -33,18 +33,16 @@ export default function IndexPage() {
         transition={{ duration: 0.8 }}
       >
         <Badge variant="secondary" className="mb-4">
-          Willkommen zu Ihrer neuen App
+          LinkedIn Content Creation Tool
         </Badge>
         <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
-          Erstellen Sie schöne Schnittstellen
-          <br />
-          Mit Altan AI
+          Simplify Your LinkedIn Posts
         </h1>
         <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-         Beginnen Sie mit dem Chatten, um diese App zu bearbeiten.
+          Transform URLs, YouTube links, and more into engaging LinkedIn content.
         </p>
         <Button size="lg" className="mt-4" onClick={() => navigate('/dashboard')}>
-          Beispiel-Dashboard anzeigen <ArrowRight className="ml-2 h-4 w-4" />
+          Get Started <ArrowRight className="ml-2 h-4 w-4" />
         </Button>
       </motion.section>
 
@@ -54,17 +52,17 @@ export default function IndexPage() {
         initial="initial"
         whileInView="animate"
         viewport={{ once: true }}
-        className="grid gap-8 md:grid-cols-3"
+        className="grid gap-8 md:grid-cols-4"
       >
         <motion.div variants={fadeInUp}>
           <Card>
             <CardContent className="pt-6">
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
-                <Component className="h-6 w-6 text-primary" />
+                <Link className="h-6 w-6 text-primary" />
               </div>
-              <h3 className="text-xl font-bold">Wiederverwendbare Komponenten</h3>
+              <h3 className="text-xl font-bold">Create from URLs</h3>
               <p className="text-muted-foreground">
-                Vorgefertigte Komponenten, die Sie einfach anpassen und in Ihre Projekte integrieren können.
+                Transform URLs from blogs, articles, or other online resources into LinkedIn posts quickly and effortlessly.
               </p>
             </CardContent>
           </Card>
@@ -74,11 +72,11 @@ export default function IndexPage() {
           <Card>
             <CardContent className="pt-6">
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
-                <Palette className="h-6 w-6 text-primary" />
+                <Youtube className="h-6 w-6 text-primary" />
               </div>
-              <h3 className="text-xl font-bold">Anpassbares Design</h3>
+              <h3 className="text-xl font-bold">Paste in YouTube Links</h3>
               <p className="text-muted-foreground">
-                Passen Sie das Aussehen und die Haptik mit unserem flexiblen Themensystem einfach an.
+                Generate tailored LinkedIn posts by pasting YouTube video links and allowing the tool to craft engaging content.
               </p>
             </CardContent>
           </Card>
@@ -88,39 +86,28 @@ export default function IndexPage() {
           <Card>
             <CardContent className="pt-6">
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
-                <Zap className="h-6 w-6 text-primary" />
+                <RefreshCw className="h-6 w-6 text-primary" />
               </div>
-              <h3 className="text-xl font-bold">Schnelle Entwicklung</h3>
+              <h3 className="text-xl font-bold">Regenerate Sections</h3>
               <p className="text-muted-foreground">
-                Beschleunigen Sie Ihren Entwicklungsprozess mit unseren einsatzbereiten Komponenten.
+                Instantly rewrite or adjust parts of your LinkedIn posts using various styles such as numbered lists, personal experiences, or insights.
               </p>
             </CardContent>
           </Card>
         </motion.div>
-      </motion.section>
 
-      {/* Components Preview Section */}
-      <motion.section
-        initial="initial"
-        whileInView="animate"
-        viewport={{ once: true }}
-        className="space-y-8"
-      >
-        <motion.div variants={fadeInUp} className="text-center">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-            Entdecken Sie unsere Komponenten
-          </h2>
-          <p className="mx-auto mt-4 max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-            Entdecken Sie unsere umfangreiche Bibliothek von Komponenten, die Ihnen helfen, bessere Schnittstellen zu erstellen.
-          </p>
-        </motion.div>
-
-        <motion.div 
-          variants={staggerContainer}
-          className="grid gap-4 md:grid-cols-2 lg:grid-cols-3"
-        >
-          {/* Add component previews here */}
-          {/* You can showcase some of your most important components */}
+        <motion.div variants={fadeInUp}>
+          <Card>
+            <CardContent className="pt-6">
+              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
+                <TrendingUp className="h-6 w-6 text-primary" />
+              </div>
+              <h3 className="text-xl font-bold">Viral Post Styles</h3>
+              <p className="text-muted-foreground">
+                Leverage AI trained on thousands of high-performing LinkedIn posts to create sensational and impactful content with pre-designed hooks, insights, and body structures.
+              </p>
+            </CardContent>
+          </Card>
         </motion.div>
       </motion.section>
 
@@ -133,17 +120,17 @@ export default function IndexPage() {
       >
         <motion.div variants={fadeInUp}>
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
-            Bereit, loszulegen?
+            Ready to Enhance Your LinkedIn Presence?
           </h2>
           <p className="mx-auto mt-4 max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
-            Beginnen Sie mit dem Aufbau Ihres nächsten Projekts mit unserer modernen Komponentenbibliothek.
+            Start using our tool to make LinkedIn posting more efficient and impactful for professionals.
           </p>
           <div className="mt-6 flex justify-center gap-4">
             <Button size="lg" variant="default">
-              Einige CTA
+              Try Now
             </Button>
             <Button size="lg" variant="outline">
-              Haupt-CTA
+              Learn More
             </Button>
           </div>
         </motion.div>
