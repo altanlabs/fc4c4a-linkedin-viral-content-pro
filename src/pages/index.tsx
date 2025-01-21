@@ -33,18 +33,18 @@ export default function IndexPage() {
         transition={{ duration: 0.8 }}
       >
         <Badge variant="secondary" className="mb-4">
-          Welcome to Your New App
+          Willkommen zu Ihrer neuen App
         </Badge>
         <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
-          Build Beautiful Interfaces
+          Erstellen Sie schöne Schnittstellen
           <br />
-          With Altan AI
+          Mit Altan AI
         </h1>
         <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-         Start chatting to edit this app.
+         Beginnen Sie mit dem Chatten, um diese App zu bearbeiten.
         </p>
         <Button size="lg" className="mt-4" onClick={() => navigate('/dashboard')}>
-          View sample dashboard <ArrowRight className="ml-2 h-4 w-4" />
+          Beispiel-Dashboard anzeigen <ArrowRight className="ml-2 h-4 w-4" />
         </Button>
       </motion.section>
 
@@ -62,9 +62,9 @@ export default function IndexPage() {
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
                 <Component className="h-6 w-6 text-primary" />
               </div>
-              <h3 className="text-xl font-bold">Reusable Components</h3>
+              <h3 className="text-xl font-bold">Wiederverwendbare Komponenten</h3>
               <p className="text-muted-foreground">
-                Pre-built components that you can easily customize and integrate into your projects.
+                Vorgefertigte Komponenten, die Sie einfach anpassen und in Ihre Projekte integrieren können.
               </p>
             </CardContent>
           </Card>
@@ -76,9 +76,9 @@ export default function IndexPage() {
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
                 <Palette className="h-6 w-6 text-primary" />
               </div>
-              <h3 className="text-xl font-bold">Themeable Design</h3>
+              <h3 className="text-xl font-bold">Anpassbares Design</h3>
               <p className="text-muted-foreground">
-                Easily customize the look and feel with our flexible theming system.
+                Passen Sie das Aussehen und die Haptik mit unserem flexiblen Themensystem einfach an.
               </p>
             </CardContent>
           </Card>
@@ -90,9 +90,9 @@ export default function IndexPage() {
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
                 <Zap className="h-6 w-6 text-primary" />
               </div>
-              <h3 className="text-xl font-bold">Fast Development</h3>
+              <h3 className="text-xl font-bold">Schnelle Entwicklung</h3>
               <p className="text-muted-foreground">
-                Speed up your development process with our ready-to-use components.
+                Beschleunigen Sie Ihren Entwicklungsprozess mit unseren einsatzbereiten Komponenten.
               </p>
             </CardContent>
           </Card>
@@ -108,10 +108,10 @@ export default function IndexPage() {
       >
         <motion.div variants={fadeInUp} className="text-center">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-            Explore Our Components
+            Entdecken Sie unsere Komponenten
           </h2>
           <p className="mx-auto mt-4 max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-            Discover our extensive library of components, designed to help you build better interfaces.
+            Entdecken Sie unsere umfangreiche Bibliothek von Komponenten, die Ihnen helfen, bessere Schnittstellen zu erstellen.
           </p>
         </motion.div>
 
@@ -133,17 +133,17 @@ export default function IndexPage() {
       >
         <motion.div variants={fadeInUp}>
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
-            Ready to Get Started?
+            Bereit, loszulegen?
           </h2>
           <p className="mx-auto mt-4 max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
-            Start building your next project with our modern component library.
+            Beginnen Sie mit dem Aufbau Ihres nächsten Projekts mit unserer modernen Komponentenbibliothek.
           </p>
           <div className="mt-6 flex justify-center gap-4">
             <Button size="lg" variant="default">
-              Some CTA
+              Einige CTA
             </Button>
             <Button size="lg" variant="outline">
-              Main CTA
+              Haupt-CTA
             </Button>
           </div>
         </motion.div>
